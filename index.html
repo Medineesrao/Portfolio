@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Leckerli+One&family=Lemon&family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
     <header>
         <div class="wrapper">
+            <!-- <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg" height="100%" width="100%"> -->
             <div class="heading">
                 <div class="logo">Medinee</div>
                 <ul>
                     <li>
-                        <a href="#">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#">Templates</a>
-                    </li>
-                    <li>
-                        <a href="#">Jobs</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="#">Register</a>
@@ -32,35 +27,114 @@
                     </li>
                 </ul>
             </div>
+            <div class="left">
+                <h2>Style your CV on one click!!</h2>
+                <div class="btn">
+                    <a href="#main">Get Started</a>
+                </div>
+            </div>
         </div>
     </header>
-    
-    <section class="main-section">
-        <div class="wrapper">
-            <div class="main">
-                <div class="left">
-                    <h2>Style your CV on one click!!</h2>
-                    <div class="btn">
-                        <a href="#">Get Started</a>
+    <div class="website">
+        <div class="main-section">
+            <div class="wrapper">
+                <div class="head">
+                    <div class="logo"><img src="images/image 2.png" height="60px" width="60px"></div>
+                    <ul>
+                        <li>
+                            <a href="#skill">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#ex">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#ed">Education</a>
+                        </li>
+                        <li>
+                            <a href="#ac">Achievements</a>
+                        </li>
+                        <li>
+                            <a href="#co">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="main" class="body">
+                    <div class="name"><h3>I'm Medinee S Rao </h3><br> <p>Currently pursuing second year of Engineering in Information Science
+                    </p><br><br><br></div>
+                    <img src="images/image.png" alt="">
+                </div>
+                <h4>A quick watch on my resume can be viewed here</h4>
+                <div id="skill" class="skills">
+                    <h2>Skills</h2>
+                    <div class="sk">
+                        <div class="prg">
+                            <h3>Programming Languages :</h3>
+                            <ul><li>C</li><li>Java</li><li>Python</li></ul>
+                        </div>
+                        <div class="oth">
+                            <h3>Other Languages :</h3>
+                        <ul><li>HTML</li><li>CSS</li></ul>
+                        </div>
+                        <div class="tools">
+                            <h3>Tools:</h3>
+                            <ul><li>Wordpress</li><li>Microsoft Office</li></ul>
+                        </div>
                     </div>
                 </div>
-                <img src="images/image.png" alt="">
-            </div>
-            <div class="base">
-                <h3>Contact Me At</h3>
-                <div class="icons">
-                    <a href="#"><img src="images/insta.svg" alt=""></a>
-                    <a href="#"><img src="images/whatsapp.svg" alt=""></a>
-                    <a href="#"><img src="images/call.svg" alt=""></a>
+                <div id="ex" class="exp">
+                    <h2>Experience</h2>
+                    <p>Had a one month internship at Nicozn Technologies <br><br>Project on Store Management System in C</p>
+                </div>
+                <div id="ed" class="edu">
+                    <h2>Education</h2>
+                    <p>Currently pursuing second year information science engineering in Mangalore Institute of Technology and Engineering <br><br>Completed pre university from Mahatma Gandhi Memorial College <br><br>Studied matric in T A Pai English Medium High School</p>
+                </div>
+                <div id="ac" class="ach">
+                    <h2>Achievements</h2>
+                    <div class="course-cards">
+                        <div class="course-card">
+                            <img src="images/learn.jpg" alt="">
+        
+                            <div class="info">
+                                <h3>
+                                    RPA Developer Foundation v2020.10
+                                </h3>
+                            </div>
+                        </div>
+        
+                        <div class="course-card">
+                            <img src="images/nptel.jpg" alt="">
+        
+                            <div class="info">
+                                <h3>
+                                    Problem Solving through Programming in C
+                                </h3>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <div id="co" class="con">
+                    <h2>Contact Me At</h2>
+                    <div class="icons">
+                        <a href="#"><img src="images/insta.svg" alt=""></a>
+                        <a href="#"><img src="images/whatsapp.svg" alt=""></a>
+                        <a href="#"><img src="images/call.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <footer>
+        <footer>
             <form action="#">
                 <input type="text" placeholder="800+ Free Templates"/>
                 <button class="submit-btn"><a href="#">Use Now</a></button>
             </form>
+            
     </footer>
+    </div>
+
+    <!-- cdn or connecting gsap library with this  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
 </body>
 </html>

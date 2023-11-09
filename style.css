@@ -4,6 +4,10 @@
     --backbtn-color:#02021C;
     --back1-color:#041321;
     --back2-color:#DD3DF7;
+} 
+
+*{
+    scroll-behavior: smooth;
 }
 
 *,
@@ -14,12 +18,20 @@
 
 body{
     margin:0;
-    background: linear-gradient(180deg, #041321 0%, #304A63 100%);
+    /* background: linear-gradient(180deg, #041321 0%, #304A63 100%); */
 }
 
 .wrapper{
     max-width: 1134px;
     margin:0 auto;
+
+}
+
+header{
+    background-image: url(images/bckgrnd);
+    height: 580px;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .heading{
@@ -30,6 +42,7 @@ body{
     line-height: normal;
     display: flex;
     justify-content: space-between;
+    padding:10px 20px;
 }
 
 .heading .logo{
@@ -52,12 +65,7 @@ font-size: 30px;
 font-weight: 400;
 }
 
-.main-section .wrapper .main{
-    display: flex;
-    gap: 0;
-}
-
-.main-section .wrapper .main .left h2{
+.wrapper .left h2{
     font-family: "Lemon",sans-serif;
 font-size: 70px;
 font-weight: 400;
@@ -66,13 +74,13 @@ padding-left: 100px;
 color:rgb(126, 188, 223) ;
 }
 
-.main-section .wrapper .main .left .btn a{
+.wrapper .left .btn a{
     padding: 16px 32px;
     color:#fff;
     text-decoration: none;
     position:relative;
     border-radius: 24px;
-    background:var(--light-color) ;
+    background:var(--backbtn-color) ;
     text-align: center;
     font-family: Leckerli One;
     font-size: 30px;
@@ -80,34 +88,109 @@ color:rgb(126, 188, 223) ;
     letter-spacing: 3px;
 }
 
-.main-section .wrapper .main .left .btn{
+.wrapper .left .btn{
     margin-left: 100px;
     margin-bottom: 80px;
 }
 
-.main-section .wrapper .main img{
-    width:250px;
-height: 250px;
-margin-top: 70px;
-margin-right: 200px;
+.website{
+    /* background-image: url(img/bb.jpeg); */
+    background: linear-gradient(180deg, #041321 0%, #304A63 100%);
+    width: 100%;
 }
 
-.main-section .wrapper .base h3{
+.main-section .wrapper .head {
+    display: flex;
+    gap: 200px;
+    margin-top: 3%;
+    margin-left: 20px;
+}
+
+.main-section .head .logo img{
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.main-section .wrapper .head ul{
+    display: flex;
+    align-items: center;
+    gap:60px;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.main-section .wrapper .head ul li a{
+    color: #c5ddf3;
+    text-decoration: none;
+    font-family: Irish Grover;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: -10px;
+}
+
+.main-section h2{
     text-align: center;
     color: #ce9aeb;
     font-family: Leckerli One;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px; 
+    font-weight: 500;
     letter-spacing: 4px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+
 }
 
-.main-section .wrapper .base .icons img{
+.main-section .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main-section .body .name h3{
+    position: absolute;
+    font-family: "Raleway",sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #c5ddf3;
+    padding-left: 8%;
+}
+
+.main-section .body .name p{
+    font-family: "Poppins",sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #85888a;
+    padding-left: 10px;
+    padding-top: 60px;
+}
+
+.main-section h4{
+    font-family: "Lemon",sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+    color: #8eb7d3;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.main-section .wrapper .body img{
+    width:250px;
+height: 250px;
+margin-top: 40px;
+margin-right: 200px;
+}
+
+
+.main-section .wrapper .con .icons img{
     height: 40px;
     width: 40px;
     gap: 50px;
 }
 
-.main-section .wrapper .base .icons{
+.main-section .wrapper .con .icons{
     margin-top: -30px;
     display: flex;
     gap: 30px;
@@ -115,11 +198,101 @@ margin-right: 200px;
     margin-bottom: 50px;
 }
 
+.main-section .skills .sk{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    gap: 40px ;
+    margin-top: 30px;
+}
+
+.main-section .wrapper .skills .sk h3{
+    font-family: "Lemon",sans-serif;
+    font-size: 18px;
+    color:#09b6f5;
+}
+
+.main-section .wrapper .skills .sk ul li {
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    color:#d7e6eb;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.main-section .exp p{
+    font-family: "Lemon",sans-serif;
+    font-size: 16px;
+    color:#ee94b5;
+}
+
+.main-section .edu p{
+    font-family: "Lemon",sans-serif;
+    font-size: 16px;
+    color:var(--light-color);
+}
+
+.main-section .edu{
+    margin-bottom: 100px;
+}
+
+.main-section .ach h2{
+    text-align: center;
+}
+
+.main-section .ach .course-cards{
+    display: flex;
+    gap:70px;
+}
+
+.main-section .ach .course-cards img{
+    width: 100%;
+    border-radius: 24px;
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
+    height: 260px;
+}
+
+.main-section .ach .course-card{
+    padding: 0px 32px;
+    align-items: center;
+    border-radius: 24px;
+    background: #ffffff;
+    margin:40px 20px;
+    position: relative;
+    background: #6f74a2;
+}
+
+.main-section .ach .course-card::after{
+    content: "";
+    height: 8px;
+    left: 32px;
+    right: 32px;
+    bottom: 0;
+    border-radius: 24px;
+    background: var(--dark-blue-color);
+    position: absolute;
+}
+
+.main-section .ach  .course-card h3{
+    color: var(--dark-blue-color);
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.main-section .ach .course-card .info{
+    display: flex;
+    gap:16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 footer form{
     margin-left: 20px;
     margin-top: 16px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 footer form input{
